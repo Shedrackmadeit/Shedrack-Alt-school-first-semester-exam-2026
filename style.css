@@ -1,0 +1,308 @@
+/* remove default browser spacing */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* General website styling */
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+    color:#222;
+}
+
+/* Heading */
+h1,h2,h3 {
+    line-height: 1.3;
+}
+
+/*buttons */
+button {
+    background-color: #5035d5;
+    color:white;
+    border:none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #3822a5;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+}
+
+.site-header h1 {
+    color:#5035d5;
+    font-size: 28px;
+    
+}
+
+.main-nav {
+    display:flex;
+    align-items: center;
+    gap:25px;
+}
+
+.main-nav ul {
+    display:flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color:#222;
+    font-size: 14px;
+}
+
+.main-nav a:hover {
+    color: #5035d5;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    background-image:
+    /*linear-gradient(
+-        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),*/  url("Asset/images/girl\ bitting\ her\ pencil\ 1.jpg");    
+
+background-size: cover;
+background-position:center;
+min-height: 400px;
+
+display: flex;
+align-items: center;
+
+padding: 60px 8%;
+color: white;
+
+}
+
+.hero-content {
+    max-width:600px;
+
+}
+
+.hero-content h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero-content p{
+    margin-bottom: 20px;
+}
+
+/* ABOUT CHATTER SECTION*/
+
+.about-section{
+    padding: 60px 5%;
+}
+
+.about-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2{
+    margin-bottom:20px;
+    font-size: 28px;
+}
+
+.about-image{
+    flex: 1;
+}
+
+.about-image img{
+    width:100%;
+    height:250px;
+    object-fit: cover;
+    border: 5px solid #f2ce43;
+    padding: 5px;
+}
+
+/* WHY YOU SHOUKD JOIN CHATTER*/
+
+.features-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    flex:1;
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+.card-icon {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.card h3{
+    margin-bottom: 10px;
+}
+
+.card p{
+    font-size: 14px;
+    color: #666;
+}
+
+/* TESTIMONIAL SECTION */
+
+.testimonial-section {
+    background-color: #fff6e5;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.author-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-section p {
+    margin-bottom: 15px;
+}
+
+/* COMMUNITY SECTION */
+
+.community-section{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 8%;
+    gap: 40px;
+}
+
+.community-images {
+flex:1;
+display: flex;
+flex-wrap: wrap;
+gap: 15px;
+align-items: center;
+
+}
+
+.community-images img {
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.community-text {
+    flex:1;
+}
+
+.community-text h2{
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.community-text p{
+    margin-bottom : 20px;
+}
+
+/* FOOTER SECTION */
+
+.site-footer {
+    background-color: #fff6e5;
+    padding: 50px 5%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+
+}
+
+.site-footer h2{
+    color: #5035d5;
+}
+
+.site-footer ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.site-footer li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    .site-header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+.main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-container, .testimonial-section, .community-section{
+    flex-direction: column;
+}
+
+.cards-container {
+    flex-direction: column;
+}
+
+.footer-container {
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hero-section h2 {
+    font-size: 25px
+}
+
+}
